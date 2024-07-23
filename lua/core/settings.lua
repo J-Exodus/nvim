@@ -2,13 +2,8 @@
 -- OPTIONS
 --
 
--- Map leader keys
-vim.g.mapleader=" "  -- Map leader to space key
-vim.g.localleader=" "
-
--- Do not save when switching buffers
--- o.hidden = true
-vim.opt.termguicolors = true
+-- Fix cursor in insert mode
+vim.opt.guicursor = 'n-v-c-sm-i-ci-ve:block,r-cr-o:hor20,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor'
 
 -- sensible defaults from https://www.youtube.com/watch?v=J9yqSdvAKXY
 vim.opt.backspace = '2'

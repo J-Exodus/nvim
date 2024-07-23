@@ -1,7 +1,3 @@
-vim.g.mapleader=" "  -- Map leader to space key
-vim.g.localleader=" "
-vim.keymap.set("n", "-", vim.cmd.Ex, { desc = "File Exporer"} )  -- Map - key to open file explorer
-
 local wk = require("which-key")
 wk.add({
 
@@ -14,12 +10,12 @@ wk.add({
 
 -- Trouble keymaps
   { "<leader>c", group = "code" }, -- group
-  {"<leader>ct", "<cmd>TroubleToggle<cr>", desc = "Toggle Trouble", silent = true, noremap = true, mode = "n" },
-  {"<leader>cw", "<cmd>Trouble workspace_diagnostics<cr>", desc = "Workspace Diagnostics", silent = true, noremap = true, mode = "n" },
-  {"<leader>cd", "<cmd>Trouble document_diagnostics<cr>",  desc = "Document Diagnostics", silent = true, noremap = true, mode = "n"},
-  {"<leader>cl", "<cmd>Trouble loclist<cr>",  desc = "Location List", silent = true, noremap = true, mode = "n"},
-  {"<leader>cq", "<cmd>Trouble quickfix<cr>",  desc = "Quick Fix", silent = true, noremap = true, mode = "n"},
-  {"gR", "<cmd>TroubleToggle lsp_references<cr>",  desc = "LSP Reference", silent = true, noremap = true, mode = "n"},
+  { "<leader>ct", "<cmd>TroubleToggle<cr>", desc = "Toggle Trouble", silent = true, noremap = true, mode = "n" },
+  { "<leader>cw", "<cmd>Trouble workspace_diagnostics<cr>", desc = "Workspace Diagnostics", silent = true, noremap = true, mode = "n" },
+  { "<leader>cd", "<cmd>Trouble document_diagnostics<cr>",  desc = "Document Diagnostics", silent = true, noremap = true, mode = "n"},
+  { "<leader>cl", "<cmd>Trouble loclist<cr>",  desc = "Location List", silent = true, noremap = true, mode = "n"},
+  { "<leader>cq", "<cmd>Trouble quickfix<cr>",  desc = "Quick Fix", silent = true, noremap = true, mode = "n"},
+  { "gR", "<cmd>TroubleToggle lsp_references<cr>",  desc = "LSP Reference", silent = true, noremap = true, mode = "n"},
 
 -- Buffer keymaps
   { "<leader>b", group = "buffer" }, -- group

@@ -2,6 +2,7 @@ tt.*
 .tests
 doc/tags
 debug
+undodir
 .repro
 foo.*
 *.log
